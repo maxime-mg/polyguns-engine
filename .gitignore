@@ -67,3 +67,10 @@ vcpkg_installed/
 # test output & cache
 Testing/
 .cache/
+
+# FetchContent-managed third party sources/builds
+# (deps are pulled in at configure time; we don't track downloaded trees)
+third_party/*-src/
+third_party/*-build/
+third_party/*-subbuild/
+third_party/_deps/

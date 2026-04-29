@@ -1,0 +1,39 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug polyguns-engine (Windows / MSVC)",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/Debug/polyguns-engine.exe",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "preLaunchTask": "CMake: Build"
+        },
+        {
+            "name": "Debug polyguns-engine (Linux / gdb)",
+            "type": "cppdbg",
+            "request": "launch",
+            "MIMode": "gdb",
+            "program": "${workspaceFolder}/build/polyguns-engine",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "stopAtEntry": false,
+            "externalConsole": false,
+            "preLaunchTask": "CMake: Build"
+        },
+        {
+            "name": "Debug polyguns-engine (macOS / lldb)",
+            "type": "cppdbg",
+            "request": "launch",
+            "MIMode": "lldb",
+            "program": "${workspaceFolder}/build/polyguns-engine",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "stopAtEntry": false,
+            "externalConsole": false,
+            "preLaunchTask": "CMake: Build"
+        }
+    ]
+}
